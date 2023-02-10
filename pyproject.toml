@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "RoboCore_SMW-SX1262M0"
+version = "1.0.0"
+authors = [
+  { name="RoboCore", email="projetos@robocore.net" },
+]
+description = "Library created to facilitate the use of the SMW-SX1262M0 LoRaWAN module"
+readme = "README.md"
+requires-python = ">=3.9.2"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/RoboCore/RoboCore_SMW-SX1262M0_Python"
+"Store" = "https://www.robocore.net/hat-raspberry-pi/lorawan-hat-para-raspberry-pi"
