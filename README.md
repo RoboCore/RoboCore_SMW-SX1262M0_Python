@@ -1,7 +1,7 @@
 RoboCore SMW-SX1262M0 Library (Python)
 ======================================
 
-[![RoboCore LoRa HAT - Helix Antenna](https://d229kd5ey79jzj.cloudfront.net/2568/images/2568_1_M.png)](https://www.robocore.net/hat-raspberry-pi/lorawan-hat-para-raspberry-pi)
+[![RoboCore LoRaWAN HAT - Helix Antenna](https://d229kd5ey79jzj.cloudfront.net/2568/images/2568_1_M.png)](https://www.robocore.net/hat-raspberry-pi/lorawan-hat-para-raspberry-pi)
 
  Python library for the [*RoboCore LoRaWAN HAT*](https://www.robocore.net/hat-raspberry-pi/lorawan-hat-para-raspberry-pi) using the SMW-SX1262M0 LoRaWAN transceiver.
 
@@ -13,6 +13,17 @@ To install the library using [PIP](https://pip.pypa.io/en/stable/installation/),
 `pip3 install RoboCore_SMW-SX1262M0`
 
 > **Note:** this installation does not include examples.
+
+Usage
+-----
+
+The LoRaWAN HAT uses GPIO 14 and 15 for communicating over the UART with the Raspberry Pi. This means that the UART port of the RPi must be previously enabled, and the serial console must be disabled.
+
+Port to use on different models
+* RPi 3 B+: `/dev/serial0` or `/dev/ttyS0`.
+* RPi 4: `/dev/serial0` or `/dev/ttyS0`.
+* RPi 5: `/dev/ttyAMA0`.
+	** On the RPi 5, the serial console uses a dedicated UART.
 
 Repository Contents
 -------------------
